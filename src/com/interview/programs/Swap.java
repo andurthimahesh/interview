@@ -1,19 +1,30 @@
 package com.interview.programs;
 
 public class Swap {
+	public void swapping(int firstNumber,int lastNumber)
+	{
+		/* int temp; 
+		 temp = firstNumber; 
+		 firstNumber = lastNumber;
+		 firstNumber=20;
+		 lastNumber = temp;*/
+		
+		firstNumber = firstNumber + lastNumber;
+		lastNumber = firstNumber - lastNumber;
+		firstNumber = firstNumber - lastNumber;
+		 System.out.println(firstNumber+" "+lastNumber);
+		
+	}
 
 	public static void main(String[] args) {
-		int a = 10;
-		int b = 20;
+		int firstNumber = 10;
+		int lastNumber = 20;
+		Swap swap= new Swap();
+		swap.swapping(firstNumber, lastNumber);
+		
 
-		/*
-		 * int c; c = a;// c=10 a = b;// a=20 b = c;
-		 */
-		a = a + b;
-		b = a - b;
-		a = a - b;
+		
 
-		System.out.println(a + " " + b);
 
 	}
 
