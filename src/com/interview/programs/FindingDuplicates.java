@@ -5,8 +5,9 @@ public class FindingDuplicates {
 	public void duplicates(int[] array) {
 		for (int i = 0; i < array.length; i++) {
 			for (int j = 1; j < array.length; j++) {
-				if (array[i] == array[j] && i != j) {
-					System.out.println("Duplicate numbers : " + array[j]);
+				if (array[i] == array[j]) {
+					System.out.print(array[j]+" ");
+					break;
 				}
 			}
 

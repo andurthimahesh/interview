@@ -7,7 +7,7 @@ public class CommonElements {
 			for (int j = 0; j < array2.length; j++) {
 
 				if (array[i] == array2[j]) {
-					System.out.print(array[i]+" ");
+					System.out.print(array[j]+" ");
 				}
 			}
 
